@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { profile } from "@/data/profile";
 
 const pageLinks = [
@@ -30,10 +31,10 @@ export default function Footer() {
           
           {/* Left Column: Branding */}
           <div className="md:col-span-6 space-y-4">
-            <h3 className="font-display text-2xl font-black uppercase tracking-tight text-panel-text">
+            <h3 className="font-display text-8xl font-black uppercase tracking-tight text-panel-text">
               Tawkir<span className="text-accent">.</span>
             </h3>
-            <div className="space-y-1 font-mono text-xs text-muted uppercase">
+            <div className="space-y-1 font-mono text-m text-muted uppercase">
               <p>{profile.role}</p>
               <p>{profile.location}</p>
             </div>
@@ -41,18 +42,18 @@ export default function Footer() {
 
           {/* Middle Column: Nav Links */}
           <div className="md:col-span-3 space-y-4">
-            <h4 className="font-mono text-[10px] text-accent tracking-wider uppercase">
+            <h4 className="font-mono text-[14px] text-accent tracking-wider uppercase">
               Pages
             </h4>
-            <ul className="space-y-2 text-xs font-mono uppercase tracking-tight">
+            <ul className="space-y-2 text-[12px] font-mono uppercase tracking-tight">
               {pageLinks.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-muted hover:text-panel-text transition-colors duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -60,20 +61,20 @@ export default function Footer() {
 
           {/* Right Column: Elsewhere Links */}
           <div className="md:col-span-3 space-y-4">
-            <h4 className="font-mono text-[10px] text-accent tracking-wider uppercase">
+            <h4 className="font-mono text-[14px] text-accent tracking-wider uppercase">
               Elsewhere
             </h4>
-            <ul className="space-y-2 text-xs font-mono uppercase tracking-tight">
+            <ul className="space-y-2 text-[12px] font-mono uppercase tracking-tight">
               {elsewhereLinks.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted hover:text-panel-text transition-colors duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { profile } from "@/data/profile";
 
 const specialties = [
@@ -29,7 +30,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="hero-title text-foreground font-display font-black uppercase"
           >
-            Tawkir<span className="text-accent">.</span>
+            Tawkir Arifin<span className="text-accent">.</span>
           </motion.h1>
         </div>
 
@@ -47,18 +48,18 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
-              <a
+              <Link
                 href="#work"
                 className="inline-flex items-center justify-center bg-foreground text-background px-6 py-3 text-xs font-mono font-medium tracking-wider hover:bg-accent hover:text-white transition-colors duration-300"
               >
                 VIEW WORK ↗
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#contact"
                 className="inline-flex items-center justify-center border border-foreground text-foreground px-6 py-3 text-xs font-mono font-medium tracking-wider hover:bg-foreground hover:text-background transition-colors duration-300"
               >
                 GET IN TOUCH ↗
-              </a>
+              </Link>
             </div>
           </motion.div>
 

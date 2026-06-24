@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, MessageSquare, FileText } from "lucide-react";
+import Link from "next/link";
 import { profile } from "@/data/profile";
 
 const GithubIcon = ({ className }: { className?: string }) => (
@@ -108,33 +109,36 @@ export default function ContactCTA() {
           {contacts.map((item, index) => {
             const Icon = item.icon;
             return (
-              <motion.a
+              <motion.div
                 key={item.label}
-                href={item.href}
-                target={item.download ? undefined : "_blank"}
-                rel={item.download ? undefined : "noopener noreferrer"}
-                download={item.download || undefined}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="flex flex-col items-center justify-between p-6 border border-line bg-background-soft/30 hover:bg-background-soft hover:border-line-dark transition-all duration-300 group cursor-pointer"
               >
-                {/* Icon Row */}
-                <div className="text-muted group-hover:text-accent transition-colors duration-200 mb-4 p-2 border border-line/60 rounded bg-background group-hover:border-accent/40">
-                  <Icon className="h-5 w-5" />
-                </div>
+                <Link
+                  href={item.href}
+                  target={item.download ? undefined : "_blank"}
+                  rel={item.download ? undefined : "noopener noreferrer"}
+                  download={item.download || undefined}
+                  className="flex flex-col items-center justify-between p-6 border border-line bg-background-soft/30 hover:bg-background-soft hover:border-line-dark transition-all duration-300 group cursor-pointer"
+                >
+                  {/* Icon Row */}
+                  <div className="text-muted group-hover:text-accent transition-colors duration-200 mb-4 p-2 border border-line/60 rounded bg-background group-hover:border-accent/40">
+                    <Icon className="h-5 w-5" />
+                  </div>
 
-                {/* Details */}
-                <div className="space-y-1 text-center w-full">
-                  <span className="block font-mono text-[10px] text-muted uppercase tracking-wider">
-                    {item.label}
-                  </span>
-                  <span className="block text-xs font-semibold text-foreground truncate max-w-full">
-                    {item.value}
-                  </span>
-                </div>
-              </motion.a>
+                  {/* Details */}
+                  <div className="space-y-1 text-center w-full">
+                    <span className="block font-mono text-[10px] text-muted uppercase tracking-wider">
+                      {item.label}
+                    </span>
+                    <span className="block text-xs font-semibold text-foreground truncate max-w-full">
+                      {item.value}
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
             );
           })}
         </div>
