@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
     qualities: [50, 75, 90],
     // Support both WebP and AVIF formats
     formats: ["image/avif", "image/webp"],
+    // Allow external images from our text-to-image API
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "coresg-normal.trae.ai",
+        port: "",
+        pathname: "/api/ide/v1/text_to_image",
+      },
+    ],
   },
 };
 

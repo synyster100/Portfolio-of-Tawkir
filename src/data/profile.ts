@@ -113,44 +113,64 @@ export const extracurricular = [
 
 export const works = [
   {
-    title: "Skarion Website Revamp",
-    category: "Frontend / Design System",
+    title: "Skarion",
+    category: "Organization Website",
     year: "2024 - Present",
     description:
-      "A responsive organizational website rebuild focused on clearer structure, improved usability, and scalable frontend components.",
+      "Responsive organizational website with design system and improved usability.",
     tags: ["Next.js", "React", "Responsive UI", "Design System"],
-    image: "/work/skarion-web.jpg",
-    link: "#"
+    image: "/work/skarion.png",
+    link: "https://www.skarion.com/"
   },
   {
-    title: "AI Chatbot Applications",
-    category: "AI Product Development",
-    year: "2024 - 2025",
+    title: "Barakah Agency",
+    category: "Agency Website",
+    year: "2024",
     description:
-      "AI-driven applications and chatbots built with LLM APIs, Next.js, and full-stack deployment workflows.",
-    tags: ["LLM APIs", "Next.js", "Node.js", "AI Apps"],
-    image: "/work/ai-chatbot.jpg",
-    link: "#"
+      "A creative agency website showcasing services and portfolio with modern design.",
+    tags: ["Next.js", "React", "Responsive UI", "Design"],
+    image: "/work/barakah-agency.png",
+    link: "https://www.barakah.agency/"
   },
   {
-    title: "AQI Forecasting Research",
-    category: "Machine Learning / Research",
-    year: "2025",
+    title: "Call Shiv AI",
+    category: "AI Product",
+    year: "2024",
     description:
-      "Comparative air quality prediction research using ARIMA, SARIMA, LSTM, and Transformer models on a 500,000+ point dataset.",
-    tags: ["Python", "TensorFlow", "Time Series", "Research"],
-    image: "/work/aqi-forecast.jpg",
-    link: "#"
+      "AI-powered communication platform with intuitive interface and modern features.",
+    tags: ["Next.js", "React", "AI", "Responsive UI"],
+    image: "/work/callshivai.png",
+    link: "https://www.callshivai.com/"
   },
   {
-    title: "MERN Stack Web Apps",
-    category: "Full-Stack Development",
-    year: "2024 - 2025",
+    title: "Pentest Pilot",
+    category: "Security Platform",
+    year: "2024",
     description:
-      "End-to-end web applications covering backend logic, frontend interfaces, and database-connected product workflows.",
-    tags: ["MongoDB", "Express", "React", "Node.js"],
-    image: "/work/mern-apps.jpg",
-    link: "#"
+      "Cybersecurity penetration testing platform with professional interface.",
+    tags: ["Next.js", "React", "Security", "Responsive UI"],
+    image: "/work/pentestpilot.png",
+    link: "https://pentestpilot.com/"
+  },
+  {
+    title: "Funcsters",
+    category: "Product Platform",
+    year: "2024",
+    description:
+      "Modern web platform with engaging user experience and clean design.",
+    tags: ["Next.js", "React", "UI/UX", "Responsive"],
+    image: "/work/funcsters.png",
+    link: "https://www.funcsters.io/"
+  },
+  {
+    title: "Evolved Podcast Academy",
+    category: "Education Platform",
+    year: "2024",
+    description:
+      "Podcast education platform with clean design and intuitive navigation.",
+    tags: ["Next.js", "React", "Education", "Responsive UI"],
+    image: "/work/evolved.png",
+    link: "https://evolvedpodcastacademy.io/"
   }
 ];
 
