@@ -22,7 +22,7 @@ export const experiences = [
     title: "Mid-Level Frontend Developer",
     location: "Fairfax, VA, USA",
     mode: "Remote",
-    date: "Nov 2024 - July 2026",
+    date: "Nov 2025 - July 2026",
     bullets: [
       "Planned and designed the revamp of the organization’s official website and sister-concern web properties.",
       "Developed SCORM packages and course content for multiple niche industries in the US market.",
